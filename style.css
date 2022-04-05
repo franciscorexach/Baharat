@@ -68,6 +68,9 @@ body {
     margin-bottom: 10vh;
     margin-right: 10vw; 
 }
+.usuario-password{
+    display: flex;
+}
 nav{
     margin-bottom: 15vh !important;
     align-items: center;
