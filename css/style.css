@@ -1,23 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-style: border-box;
-}
-
-html {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  min-height: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  color: #44546e;
-  background-image: url(images/sky.jpeg);
-  background-size: cover;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .grid-container-header {
@@ -91,12 +84,6 @@ header h2 {
 nav {
   margin-bottom: 15vh !important;
   margin-top: 3vh !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 nav #boton-buscar {
@@ -127,6 +114,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #44546e;
+  font-weight: bold;
 }
 
 main {
@@ -180,14 +168,14 @@ main .container-resto {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60vh;
   width: 100vw;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
@@ -198,14 +186,14 @@ main .container-resto2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 40vh;
   width: 100vw;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin-top: 0vh;
   margin-bottom: 10vh;
   margin-right: 10vw;
@@ -217,14 +205,14 @@ main .container-resto3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60vh;
   width: 100vw;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin-top: 0vh;
   margin-bottom: 10vh;
   margin-right: 10vw;
@@ -234,7 +222,7 @@ main .imagen2 {
   background-color: white;
   border: 3px solid #44546e;
   width: 30vw;
-  height: 40vh;
+  height: 45vh;
   margin: 0vh 1vw 0vh 1vw;
   text-align: center;
   font-weight: bold;
@@ -257,6 +245,12 @@ main .imagen2:hover {
 main a {
   text-decoration: none;
   color: #44546e;
+  font-weight: bold;
+}
+
+main .justificado {
+  color: #44546e;
+  font-weight: bold;
 }
 
 footer .container-footer {
@@ -300,6 +294,7 @@ footer p {
 }
 
 h3 {
+  color: #576c8e;
   font-weight: bold;
 }
 
@@ -395,5 +390,26 @@ h3 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-style: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #44546e;
+  background-image: url(../images/sky.jpeg);
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

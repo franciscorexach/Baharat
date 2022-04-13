@@ -1,0 +1,38 @@
+footer{
+    .container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    #footer-text{
+    text-align: center;
+    align-items: flex-end;
+    }
+    #contactanos{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+    }
+    #titulo-contacto{
+    text-align: center;
+    margin-left: 10vw;
+    }
+    p{
+    text-align: center;
+    margin: 5vh;
+    }
+}
+h3{
+    color: lighten($color-principal, 10%);
+    font-weight: $negrita;
+    }
+.imagenes{
+    width: 20vw;
+    height: 30vh;
+}
+.imagenes-redes{
+    height: 5vh;
+    width: 5vw;
+    margin: 0vh 1vw 0vh 1vw;
+}

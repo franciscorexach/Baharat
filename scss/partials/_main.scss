@@ -1,0 +1,81 @@
+main{
+    display: grid;
+    margin: 20px 10px 10px 10px;
+    .container-index{
+        display: flex;
+        flex-wrap: wrap;
+        height: 60vh;
+        width: 100vw;
+        align-items: flex-start;
+        .imagen{
+            background-color: white;
+            border: 3px solid $color-principal;
+            width: 30vw;
+            height: 40vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            margin-left: 1vw;
+            transition: all 0.5s ease-in;   
+            &:hover{
+                box-shadow: 5px 2px 3px $color-principal;
+                transform: scale(1.5,1.5);
+            }
+        }
+    }
+    .container-resto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 100vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;  
+    }
+    .container-resto2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        width: 100vw;
+        margin-top: 0vh;
+        margin-bottom: 10vh;
+        margin-right: 10vw; 
+    }
+    .container-resto3{
+        @include flex(flex, wrap, center, center);
+        height: 60vh;
+        width: 100vw;
+        margin-top: 0vh;
+        margin-bottom: 10vh;
+        margin-right: 10vw; 
+    }
+    .imagen2{
+        background-color: white;
+        border: 3px solid $color-principal;
+        width: 30vw;
+        height: 45vh;
+        margin: 0vh 1vw 0vh 1vw;
+        text-align: center;
+        font-weight: bold;
+        align-items: flex-start;
+        box-sizing: border-box;
+        transition: all 0.5s ease-in;
+        &:hover{
+            box-shadow: 5px 2px 3px $color-principal;
+            transform: scale(1.5,1.5);
+        }
+    }
+    a{
+        text-decoration: none;
+        color: map-get($texto, color);
+        font-weight: map-get($texto, font-weight);
+    }
+    .justificado{
+        color: map-get($texto, color);
+        font-weight: map-get($texto, font-weight);
+    }
+}

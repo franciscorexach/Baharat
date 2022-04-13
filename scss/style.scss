@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./partials/variables";
+@import "./partials/header";
+@import "./partials/nav";
+@import "./partials/main";
+@import "./partials/footer";
+@import "./partials/mediaquerys";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-style: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: map-get($texto, font-weight);
+    color: map-get($texto, color);
+    background-image: url(../images/sky.jpeg);
+    background-size: cover;
+}

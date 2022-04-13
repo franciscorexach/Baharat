@@ -1,0 +1,18 @@
+$color-principal: #44546e;
+$negrita: bold;
+$texto: (
+    color: #44546e,
+    font-weight: bold,
+);
+@mixin flex($despliegue, $wrap, $contenido-justificado, $elementos-alienados) {
+    display: $despliegue;
+    flex-wrap: $wrap;
+    justify-content: $contenido-justificado;
+    align-items: $elementos-alienados;
+}
+%flexy {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center; 
+}
