@@ -78,4 +78,7 @@ main{
         color: map-get($texto, color);
         font-weight: map-get($texto, font-weight);
     }
+    .sucursales-propias{
+        display: flex;
+    }
 }
