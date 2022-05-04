@@ -2,34 +2,46 @@
     li {
         display: block;
     }
+    .sucursales-propias {
+        display: block;
+    }
 }    
 @media (max-width: 590px) {
         .grid-container-header {
             display: block;
         }
         .container-index {
-            display: block;
+            display: block !important;
             justify-content: center;
             align-items: center;
             margin-bottom: 1vh;
+            .imagen {
+                height: 30vh;
+                width: 80vw;
+                margin-bottom: 1vh;
+                margin-top: 1vh;
+            }
         }
         .container-resto2 {
+            display: block !important;
             margin-top: 5vh;
+            margin-bottom: 10%;
+            .imagen2 {
+                height: 35vh;
+                width: 40vw;
+            }
+        }
+        .container-resto3 {
+            display: block !important;
+            .imagen2 {
+                height: 30vh;
+                width: 40vw;   
+            }
         }
         .justificado {
             margin-top: 2vh;
             margin-bottom: 2vh;
             font-size: 3vh;
-        }
-        .imagen {
-            height: 30vh;
-            width: 50vw;
-            margin-bottom: 1vh;
-            margin-top: 1vh;
-        }
-        .imagen2 {
-            height: 30vh;
-            width: 35vw;
         }
         h1 {
             justify-content: left;
@@ -52,20 +64,25 @@
         font-size: 3vh;
         }
         main {
-            height: 50%;
+            height: 50vh;
             margin: 1vh 1vw 1vh 1vw;
         }
         nav {
-            height: 10%;
-            margin-bottom: 0vh;
-            margin-top: 5vh;
+            height: 5%;
+            margin-bottom: 0vh !important;
+            margin-top: 0vh;
         }
         #contactanos {
             margin-left: 0vw;
         }
         footer {
-            height: 20%;
+            height: 1vh !important;
             align-items: flex-end;
             justify-content: center;
+            margin-bottom: 0vh;
+        }
+        .sucursales-propias {
+            display: block;
+            justify-content: flex-start;
         }
 }

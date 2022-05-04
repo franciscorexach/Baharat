@@ -1,5 +1,4 @@
 main{
-    display: grid;
     margin: 20px 10px 10px 10px;
     .container-index{
         display: flex;
@@ -77,8 +76,11 @@ main{
     .justificado{
         color: map-get($texto, color);
         font-weight: map-get($texto, font-weight);
+        margin-left: 1vw;
     }
     .sucursales-propias{
         display: flex;
+        justify-content: space-around;
+        margin-bottom: 1vh;
     }
 }
