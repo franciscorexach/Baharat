@@ -156,8 +156,8 @@ main .container-index .imagen {
 main .container-index .imagen:hover {
   -webkit-box-shadow: 5px 2px 3px #44546e;
           box-shadow: 5px 2px 3px #44546e;
-  -webkit-transform: scale(1.5, 1.5);
-          transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 main .container-resto {
@@ -191,10 +191,8 @@ main .container-resto2 {
       -ms-flex-align: center;
           align-items: center;
   height: 40vh;
-  width: 100vw;
+  width: 90vw;
   margin-top: 0vh;
-  margin-bottom: 10vh;
-  margin-right: 10vw;
 }
 
 main .container-resto3 {
@@ -210,10 +208,9 @@ main .container-resto3 {
       -ms-flex-align: center;
           align-items: center;
   height: 60vh;
-  width: 100vw;
+  width: 90vw;
   margin-top: 0vh;
-  margin-bottom: 10vh;
-  margin-right: 10vw;
+  margin-right: 0vw;
 }
 
 main .imagen2 {
@@ -236,8 +233,8 @@ main .imagen2 {
 main .imagen2:hover {
   -webkit-box-shadow: 5px 2px 3px #44546e;
           box-shadow: 5px 2px 3px #44546e;
-  -webkit-transform: scale(1.5, 1.5);
-          transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 main a {
@@ -261,6 +258,36 @@ main .sucursales-propias {
   margin-bottom: 1vh;
 }
 
+main #contactanos {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vh;
+}
+
+main #contactanos2 {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #titulo-contacto {
+  text-align: center;
+  margin-left: 10vw;
+}
+
+footer {
+  display: block;
+}
+
 footer .container-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,22 +305,6 @@ footer #footer-text {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-footer #contactanos {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5vh;
-}
-
-footer #titulo-contacto {
-  text-align: center;
-  margin-left: 10vw;
 }
 
 footer p {
@@ -332,35 +343,31 @@ h3 {
   }
   .container-index {
     display: block !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 1vh;
+    height: 30vh;
   }
   .container-index .imagen {
-    height: 30vh;
-    width: 80vw;
-    margin-bottom: 1vh;
-    margin-top: 1vh;
+    height: 22vh !important;
+    width: 80vw !important;
   }
   .container-resto2 {
     display: block !important;
-    margin-top: 5vh;
-    margin-bottom: 10%;
   }
   .container-resto2 .imagen2 {
-    height: 35vh;
-    width: 40vw;
+    height: 20vh;
+    width: 45vw;
   }
   .container-resto3 {
     display: block !important;
   }
   .container-resto3 .imagen2 {
-    height: 30vh;
-    width: 40vw;
+    height: 20vh;
+    width: 45vw;
   }
   .justificado {
     margin-top: 2vh;
@@ -378,7 +385,7 @@ h3 {
   }
   .imagenes {
     width: 10vw;
-    height: 20vh;
+    height: 10vh;
   }
   header {
     height: 20%;
@@ -388,15 +395,11 @@ h3 {
   }
   li {
     font-size: 3vh;
-  }
-  main {
-    height: 50vh;
-    margin: 1vh 1vw 1vh 1vw;
+    margin: 5vh;
+    display: block !important;
   }
   nav {
     height: 5%;
-    margin-bottom: 0vh !important;
-    margin-top: 0vh;
   }
   #contactanos {
     margin-left: 0vw;
@@ -410,12 +413,26 @@ h3 {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0vh;
+    position: absolute;
   }
   .sucursales-propias {
-    display: block;
+    display: block !important;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 5vh;
+  }
+  .mapa {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 590px) {
+  #contactanos2 {
+    width: 30vw;
+  }
+  li {
+    height: 3vh;
   }
 }
 

@@ -19,7 +19,7 @@ main{
             transition: all 0.5s ease-in;   
             &:hover{
                 box-shadow: 5px 2px 3px $color-principal;
-                transform: scale(1.5,1.5);
+                transform: scale(1.2,1.2);
             }
         }
     }
@@ -39,18 +39,15 @@ main{
         justify-content: center;
         align-items: center;
         height: 40vh;
-        width: 100vw;
+        width: 90vw;
         margin-top: 0vh;
-        margin-bottom: 10vh;
-        margin-right: 10vw; 
     }
     .container-resto3{
         @include flex(flex, wrap, center, center);
         height: 60vh;
-        width: 100vw;
+        width: 90vw;
         margin-top: 0vh;
-        margin-bottom: 10vh;
-        margin-right: 10vw; 
+        margin-right: 0vw; 
     }
     .imagen2{
         background-color: white;
@@ -65,7 +62,7 @@ main{
         transition: all 0.5s ease-in;
         &:hover{
             box-shadow: 5px 2px 3px $color-principal;
-            transform: scale(1.5,1.5);
+            transform: scale(1.2,1.2);
         }
     }
     a{
@@ -83,4 +80,19 @@ main{
         justify-content: space-around;
         margin-bottom: 1vh;
     }
+    #contactanos{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 5vh;
+        }
+    #contactanos2 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+        #titulo-contacto{
+        text-align: center;
+        margin-left: 10vw;
+        }
 }
